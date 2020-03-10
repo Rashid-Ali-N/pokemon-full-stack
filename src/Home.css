@@ -1,0 +1,56 @@
+.poke-text {
+  font-family: Druk-Med;
+  font-size: 60px;
+  display: inline-block;
+  margin-left: 486px;
+  text-align: center;
+  text-decoration: none;
+  color: #07224d;
+  margin-top: 155px;
+  margin-bottom: 24px;
+}
+
+.poke-text:hover {
+  color: #1993d1;
+}
+
+.poke-body {
+  background-color: #ffca08;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  margin-top: -7px;
+}
+
+.stack-text {
+  font-family: Druk-Med;
+  font-size: 50px;
+  /* margin-left: 40px; */
+  text-align: center;
+  text-decoration: none;
+  color: #07224d;
+  margin-top: -15px;
+  margin-bottom: 14px;
+}
+
+.inv-text {
+  font-family: Druk-Med;
+  font-size: 25px;
+  margin-left: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #07224d;
+  /* margin-top: 155px; */
+  margin-bottom: 24px;
+}
+
+.fav-text {
+  font-family: Druk-Med;
+  font-size: 25px;
+  margin-left: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #07224d;
+  /* margin-top: 155px; */
+  margin-bottom: 24px;
+}

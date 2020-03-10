@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Druk-Med;
+  src: url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.woff");
+}
+
+.pokename {
+  font-family: Druk-Med;
+  font-size: 60px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #ffca08;
+  margin-top: -24px;
+  margin-bottom: 24px;
+}
+
+.pokename:hover {
+  /* text-decoration: underline; */
+  color: white;
+}
+
+.pokename-fav:hover {
+  /* text-decoration: underline; */
+  color: white;
+}
+
+.navigation {
+  font-size: 15px;
+  width: 100vw;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #1993d1;
+  opacity: 1;
+  z-index: 3;
+  list-style-type: none;
+  margin: 0;
+  top: 0;
+  position: fixed;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 38px;
+}
+
+.body {
+  background-color: #07224d;
+  height: 100%;
+  width: 100%;
+  margin-top: -6px;
+}
+
+.border-wid {
+  border-bottom: 2px solid #2dd5ff;
+  /* margin-top: 47px; */
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.button-prev {
+  margin-left: 0px;
+  font-size: 40px;
+  font-family: Druk-Med;
+  background-color: #3468b3;
+  border: none;
+  color: white;
+  padding: 16px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.button-prev:hover {
+  background-color: #ffca08;
+}
+
+.color {
+  height: 72px;
+  width: 936px;
+  /* background-color: #2dd5ff; */
+  display: block;
+  margin-left: 180px;
+  margin-top: -72px;
+}
+
+.button {
+  margin-left: 1116px;
+  font-size: 40px;
+  margin-top: -72px;
+  font-family: Druk-Med;
+  background-color: #3468b3;
+  border: none;
+  color: white;
+  padding: 16px 25px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+
+.button:hover {
+  background-color: #ffca08;
+}
+
+.home-link {
+  margin-left: 150px;
+  font-size: 17px;
+  margin-right: 923px;
+  margin-top: 18px;
+  font-family: Druk-Med;
+  position: fixed;
+  /* background-color: #ffca08; */
+  border: none;
+  color: #07224d;
+  /* padding: 16px 25px; */
+  text-decoration: none;
+  display: inline-block;
+  z-index: 100;
+}
+
+.home-link:hover {
+  color: #ffca08;
+}
+
+.inv-link {
+  margin-left: 240px;
+  font-size: 17px;
+  margin-right: 923px;
+  margin-top: 1px;
+  font-family: Druk-Med;
+  position: fixed;
+  /* background-color: #ffca08; */
+  border: none;
+  color: #07224d;
+  /* padding: 16px 25px; */
+  text-decoration: none;
+  display: inline-block;
+  z-index: 100;
+}
+
+.inv-link:hover {
+  color: #ffca08;
+}
+
+.fav-link {
+  margin-left: 360px;
+  font-size: 17px;
+  margin-right: 923px;
+  margin-top: -17px;
+  font-family: Druk-Med;
+  position: fixed;
+  /* background-color: #ffca08; */
+  border: none;
+  color: #07224d;
+  /* padding: 16px 25px; */
+  text-decoration: none;
+  display: inline-block;
+  z-index: 100;
+}
+
+.fav-link:hover {
+  color: #ffca08;
+}
+
+ul {
+  list-style-type: none;
+}

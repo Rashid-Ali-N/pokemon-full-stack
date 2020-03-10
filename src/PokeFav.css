@@ -1,0 +1,23 @@
+.fav-body {
+  background-color: #3468b3;
+  height: 100%;
+  width: 100%;
+  margin-top: -6px;
+}
+
+.pokename-fav {
+  font-family: Druk-Med;
+  font-size: 60px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #ffca08;
+  margin-top: -24px;
+  margin-bottom: 24px;
+}
+
+.fav-border-wid {
+  border-bottom: 2px solid #2dd5ff;
+  /* margin-top: 47px; */
+  margin-left: 0px;
+  margin-right: 0px;
+}

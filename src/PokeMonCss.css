@@ -20,6 +20,7 @@
   display: block;
   color: #07224d;
   margin-top: -28px;
+  display: flex;
   text-transform: uppercase;
 }
 .height {
@@ -27,7 +28,7 @@
   font-size: 30px;
   color: #ffca08;
   margin-left: 936px;
-  margin-top: -76px;
+  margin-top: -97px;
   /* position: absolute; */
 }
 
@@ -36,9 +37,9 @@
   font-size: 30px;
   color: #ffca08;
   margin-left: 936px;
-  position: absolute;
-
-  margin-top: -20px;
+  /* position: absolute; */
+  margin-top: -8px;
+  padding-bottom: 14px;
 }
 
 .stat-poke {
@@ -46,7 +47,7 @@
   font-size: 30px;
   margin-left: 48px;
   color: #ffca08;
-  margin-top: 83px;
+  margin-top: 99px;
   display: relative;
   text-transform: uppercase;
 }
@@ -75,7 +76,7 @@
   font-size: 30px;
   margin-left: 40px;
   color: #ffca08;
-  margin-top: 28px;
+  margin-top: 40px;
   text-transform: uppercase;
 }
 
@@ -113,7 +114,7 @@
   margin-left: 893px;
   border-right-style: solid;
   border-right-width: 2px;
-  height: 400px;
+  height: 415px;
   display: block;
   position: absolute;
 }
@@ -125,7 +126,7 @@
   margin-left: 893px;
   border-right-style: solid;
   border-right-width: 2px;
-  height: 285px;
+  height: 313px;
   display: inline-block;
 }
 
@@ -155,7 +156,9 @@
 .body-2 {
   margin-top: -6px;
   background-color: #3468b3;
-  height: 468px;
+  /* height: 559px; */
+  height: 531px;
+
   /* height: 499px; */
   z-index: 10;
 }
@@ -175,17 +178,17 @@
 
 .fav-but {
   font-size: 17px;
-  margin-top: -118px;
-  margin-left: 937px;
+  margin-top: -189px;
+  margin-left: 895px;
   font-family: Druk-Med;
   background-color: #07224d;
   border: none;
   color: white;
-  padding: 8px 8px;
-  text-decoration: none;
+  padding: 13px 145px;
   display: block;
   z-index: 1;
   position: absolute;
+  text-transform: uppercase;
 }
 
 .fav-but:hover {

@@ -14,6 +14,7 @@ function PokeMon(props) {
     favorites: [],
     types: []
   });
+
   console.log("0000", props.match.params);
   useEffect(() => {
     axios
@@ -23,6 +24,7 @@ function PokeMon(props) {
         console.log("response.data", response.data);
       });
   }, []);
+
   //   const poke = pokeDataGlobal.find(
   //     pokemon => pokemon.name === props.match.params.name
   //   );
@@ -33,6 +35,7 @@ function PokeMon(props) {
   console.log("777", poke.sprites.front_default);
   console.log("888", poke.stats);
   // console.log("999", poke.stats[0].stat.name);
+
   const mapAbilities = poke.abilities.map(ability => {
     console.log("444", ability);
     return <div className="ability">{ability.ability.name}</div>;
@@ -45,7 +48,7 @@ function PokeMon(props) {
 
   const mapTypes = poke.types.map(type => {
     console.log("99", type);
-    return <div className="move">{type.type.name}</div>;
+    return <div className="move"> | {type.type.name} | </div>;
   });
 
   const mapStats = poke.stats.map(stat => {
@@ -85,7 +88,10 @@ function PokeMon(props) {
           />
         </div>
         <h1 className="pokename-2"> {poke.name}</h1>
-        <div className="type">{mapTypes}</div>
+        <div className="type">
+          {mapTypes}
+          <br></br>
+        </div>
         <button className="fav-but" onClick={() => props.addUserFavorite(poke)}>
           {" "}
           Favorite{" "}

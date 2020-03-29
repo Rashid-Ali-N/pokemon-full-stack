@@ -13,21 +13,28 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      favorites: []
+      // favorites: []
     };
   }
 
-  componentDidMount() {
-    axios.get("/favorite/").then(res => this.setState({ favorites: res.data }));
-  }
+  // componentDidMount() {
+  //   axios.get("/favorite/").then(res => this.setState({ favorites: res.data }));
+  // }
 
   addUserFavorites = pokemon => {
-    axios
-      .post("/favorite/add", { name: pokemon.name, url: pokemon.url })
-      .then(res =>
-        this.setState(prev => ({ favorites: [...prev.favorites, res.data] }))
-      );
+    axios.post("/favorite/add", { name: pokemon.name, url: pokemon.url }).then(
+      res => "hi"
+      // this.setState(prev => ({ favorites: [...prev.favorites, res.data] }))
+    );
   };
+
+  // deleteFavorites = favoritesId => {
+  //   axios.delete(`/favorite/${favoritesId}`).then(response => {
+  //     this.setState(prevFavorites =>
+  //       prevFavorites.filter(fav => fav.id !== favoritesId)
+  //     );
+  //   });
+  // };
 
   render() {
     return (
@@ -70,6 +77,7 @@ class App extends React.Component {
             <PokemonFavorites
               state={this.state.favorites}
               getUserFavorites={this.getUserFavorites}
+              deleteFavorites={this.deleteFavorites}
             />
           </Route>
         </Switch>

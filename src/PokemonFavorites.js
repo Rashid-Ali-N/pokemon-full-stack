@@ -21,8 +21,9 @@ function PokemonFavorites(props) {
 
   function deleteFavorites(favoritesId) {
     axios.delete(`/favorite/${favoritesId}`).then(response => {
-      setPokes(prevPokes => prevPokes.filter(poke => poke.id !== favoritesId));
+      setPokes(prevPokes => prevPokes.filter(poke => poke._id !== favoritesId));
     });
+    console.log("fav", favoritesId);
   }
   // console.log("fav", favoritesId);
 
@@ -30,14 +31,16 @@ function PokemonFavorites(props) {
   const mapToDo = pokes.map(poke => {
     console.log("pokeID", poke.id);
     return (
-      <Link className="pokename" to={`/pokemon/${poke.name}`}>
-        <div>
+      <div>
+        <Link className="pokename" to={`/pokemon/${poke.name}`}>
           <h1 className="pokename-fav">{poke.name}</h1>
-          <button onClick={() => deleteFavorites()}>DELETE</button>
+        </Link>
+        <button className="del-btn" onClick={() => deleteFavorites(poke._id)}>
+          delete
+        </button>
 
-          <div class="fav-border-wid"></div>
-        </div>
-      </Link>
+        <div class="fav-border-wid"></div>
+      </div>
     );
   });
 
